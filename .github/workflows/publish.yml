@@ -19,13 +19,14 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
+      - name: Checkout vim Repo
       - uses: actions/checkout@v2
         with:
           repository: 'EpokTarren/themes.vim'
           path: 'themes.vim'
 
       - name: Move files to VIM repo
-      - run: |
+        run: |
          cd $GITHUB_WORKSPACE
          cd "themes.vim"
          git rm *.vim
