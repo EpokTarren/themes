@@ -19,7 +19,6 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
-      - name: Checkout vim Repo
       - uses: actions/checkout@v2
         with:
           repository: 'EpokTarren/themes.vim'
