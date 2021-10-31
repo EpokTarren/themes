@@ -1,0 +1,158 @@
+/*!
+ * Tarren's Theme Collection v1.0.0
+ * Copyright (c) 2021 Tarren <me@tarren.moe>
+ * Repository: https://github.com/EpokTarren/themes
+ * License: MIT
+ */
+.rider {
+	--bgSat: 0.18;
+	--txt: 330;
+	--fg: 330;
+	--fg: 330;
+	--fg: 330;
+	--co: 270;
+	--co: 270;
+	--ex: 215;
+	--ex: 215;
+	--bg: 350;
+}
+
+.good-job {
+	--bgSat: 0.11;
+	--txt: 32;
+	--fg: 32;
+	--fg: 32;
+	--fg: 32;
+	--co: 200;
+	--co: 200;
+	--ex: 350;
+	--ex: 350;
+	--bg: 200;
+}
+
+.slime {
+	--bgSat: 0.36;
+	--txt: 195;
+	--fg: 195;
+	--fg: 195;
+	--fg: 195;
+	--co: 50;
+	--co: 50;
+	--ex: 280;
+	--ex: 280;
+	--bg: 195;
+}
+
+.girl {
+	--bgSat: 0.11;
+	--txt: 0;
+	--fg: 0;
+	--fg: 0;
+	--fg: 0;
+	--co: 150;
+	--co: 150;
+	--ex: 35;
+	--ex: 35;
+	--bg: 340;
+}
+
+.bloody {
+	--bgSat: 0.18;
+	--txt: 290;
+	--fg: 290;
+	--fg: 290;
+	--fg: 290;
+	--co: 355;
+	--co: 355;
+	--ex: 220;
+	--ex: 220;
+	--bg: 290;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background-color: hsl(var(--bg), var(--bgSat), 0.13);
+	color: hsl(var(--txt), 60%, 0.95);
+}
+
+.hljs-comment {
+	font-style: italic;
+	opacity: 0.5;
+}
+
+.hljs-strong {
+	font-style: bold;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-variable, 
+.hljs-params, 
+.hljs-code, 
+.hljs-comment {
+	color: hsl(var(--txt), 60%, 0.95);
+}
+
+.hljs-class, 
+.hljs-title, 
+.hljs-function, 
+.hljs-emphasis, 
+.hljs-strong, 
+.hljs-selector-tag, 
+.hljs-selector-id, 
+.hljs-selector-class, 
+.hljs-selector-attr, 
+.hljs-selector-pseudo, 
+.hljs-section, 
+.hljs-deletion {
+	color: hsl(var(--fg), 100%, 0.6);
+}
+
+.hljs-formula, 
+.hljs-link {
+	color: hsl(var(--fg), 100%, 0.7);
+}
+
+.hljs-operator, 
+.hljs-doctag, 
+.hljs-meta, 
+.hljs-name, 
+.hljs-builtin-name, 
+.hljs-attr, 
+.hljs-attribute, 
+.hljs-quote {
+	color: hsl(var(--fg), 100%, 0.9);
+}
+
+.hljs-template-tag, 
+.hljs-template-variable, 
+.hljs-addition {
+	color: hsl(var(--co), 100%, 0.6);
+}
+
+.hljs-string, 
+.hljs-punctuation, 
+.hljs-subst, 
+.hljs-tag, 
+.hljs-bullet {
+	color: hsl(var(--co), 100%, 0.7);
+}
+
+.hljs-built_in, 
+.hljs-literal, 
+.hljs-type, 
+.hljs-number, 
+.hljs-symbol, 
+.hljs-meta-keyword {
+	color: hsl(var(--ex), 100%, 0.6);
+}
+
+.hljs-keyword, 
+.hljs-regexp, 
+.hljs-meta-string {
+	color: hsl(var(--ex), 100%, 0.8);
+}

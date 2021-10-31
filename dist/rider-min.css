@@ -1,0 +1,7 @@
+/*!
+ * Tarren's Theme Collection v1.0.0
+ * Copyright (c) 2021 Tarren <me@tarren.moe>
+ * Repository: https://github.com/EpokTarren/themes
+ * License: MIT
+ */
+.hljs{display:block;overflow-x:auto;padding:0.5em;background-color:hsl(350,18%,13%);color:hsl(330,60%,95%)}.hljs-comment{font-style:italic;opacity:0.5}.hljs-strong{font-style:bold}.hljs-emphasis{font-style:italic}.hljs-variable,.hljs-params,.hljs-code,.hljs-comment{color:hsl(330,60%,95%)}.hljs-class,.hljs-title,.hljs-function,.hljs-emphasis,.hljs-strong,.hljs-selector-tag,.hljs-selector-id,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-section,.hljs-deletion{color:hsl(330,100%,60%)}.hljs-formula,.hljs-link{color:hsl(330,100%,70%)}.hljs-operator,.hljs-doctag,.hljs-meta,.hljs-name,.hljs-builtin-name,.hljs-attr,.hljs-attribute,.hljs-quote{color:hsl(330,100%,90%)}.hljs-template-tag,.hljs-template-variable,.hljs-addition{color:hsl(270,100%,70%)}.hljs-string,.hljs-punctuation,.hljs-subst,.hljs-tag,.hljs-bullet{color:hsl(270,100%,80%)}.hljs-built_in,.hljs-literal,.hljs-type,.hljs-number,.hljs-symbol,.hljs-meta-keyword{color:hsl(215,100%,60%)}.hljs-keyword,.hljs-regexp,.hljs-meta-string{color:hsl(215,100%,80%)}
