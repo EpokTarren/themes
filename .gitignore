@@ -1,3 +1,5 @@
 build/
 node_modules/
 themes/spicetify/color.ini
+themes/highlight.js/
+themes/pygments/
