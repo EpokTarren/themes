@@ -1,0 +1,9 @@
+.main-home-homeHeader {
+	background: none !important;
+}
+
+li:hover,
+div.GlueDropTarget:hover {
+	background: var(--spice-card) !important;
+	color: var(--spice-text) !important;
+}
