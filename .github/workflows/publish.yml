@@ -15,7 +15,7 @@ jobs:
 
       - name: Dependencies
         run: yarn install --frozen-lockfile
-      
+
       - name: Lint
         run: yarn lint
 
@@ -26,14 +26,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: 'EpokTarren/themes.vim'
+          token: ${{ secrets.PR_PAT }}
           path: 'themes.vim'
 
       - name: Move files to VIM repo
         run: |
-         cd $GITHUB_WORKSPACE
-         cd "themes.vim"
-         git rm *.vim
-         mv ../themes/vim/* ./
+          cd $GITHUB_WORKSPACE
+          cd "themes.vim"
+          git rm *.vim
+          mv ../themes/vim/* ./
 
       - name: VIM PR
         uses: peter-evans/create-pull-request@v3
