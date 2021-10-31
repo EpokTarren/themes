@@ -12,7 +12,7 @@ interface srcPalette {
 
 const lightness = [0.6, 0.7, 0.8, 0.9, 0.95];
 const bgLightness = [0.13, 0.16, 0.2];
-const saturation = 0.6;
+const saturation = 1;
 
 function HSLtoColour(hsl: ColourHSL): Colour {
 	return { hsl, rgb: HSLtoRGB(hsl), hex: hex(hsl) };
@@ -29,7 +29,7 @@ const palette = (
 		background1: [bg, bgSaturation, bgLightness[1]],
 		background2: [bg, bgSaturation, bgLightness[2]],
 
-		plain: [primary, saturation, lightness[4]],
+		plain: [primary, 0.6, lightness[4]],
 
 		primary0: [primary, saturation, lightness[0]],
 		primary1: [primary, saturation, lightness[1]],
