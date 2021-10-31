@@ -4,4 +4,7 @@ themes/spicetify/color.ini
 themes/highlight.js/
 themes/pygments/
 themes/vim/
-themes/vscode/
+themes/vscode/**/*.json
+themes/*.tgz
+themes/*.zip
+themes/*.vsix
