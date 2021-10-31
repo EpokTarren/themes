@@ -22,6 +22,48 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Generate Highlight.js themes
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
+        run: |
+          cd $GITHUB_WORKSPACE
+
+          git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" hljs -b highlight.js
+
+          cd hljs
+
+          git rm -rf *.css || true
+          git rm -rf *.json || true
+
+          mv ../themes/highlight.js/* ./
+
+          git add .
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git commit -m "Built highlight.js themes for ${GITHUB_SHA}" || true
+          git push origin highlight.js
+
+      - name: Generate Pygments themes
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
+        run: |
+          cd $GITHUB_WORKSPACE
+
+          git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" pygments -b pygments
+
+          cd pygments
+
+          git rm -rf *.css || true
+          git rm -rf *.json || true
+
+          mv ../themes/pygments/* ./
+
+          git add .
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git commit -m "Built pygments themes for ${GITHUB_SHA}" || true
+          git push origin pygments
+
       - name: Checkout vim Repo
         uses: actions/checkout@v2
         with:
