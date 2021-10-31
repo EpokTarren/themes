@@ -1,0 +1,11 @@
+{
+	"name": "hljs",
+	"version": "1.0.0",
+	"author": "Tarren <me@tarren.moe>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EpokTarren/themes.git"
+	},
+	"style": "dist/all.css"
+}
