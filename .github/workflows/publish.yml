@@ -1,0 +1,49 @@
+name: Publish
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+
+      - name: Lint
+        run: yarn lint
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+
+      - name: Checkout vim Repo
+        uses: actions/checkout@v2
+        with:
+          repository: 'EpokTarren/themes.vim'
+          path: 'themes.vim'
+
+      - name: Move files to VIM repo
+      - run: |
+        cd $GITHUB_WORKSPACE
+        
+        cd themes.vim
+
+        git rm *.vim
+
+        mv ../themes/vim/* ./
+
+      - name: VIM PR
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.PR_PAT }}
+          path: 'themes.vim'
+          commit-message: Update to new version
+          branch: auto-update
+          title: 'New release'
+          body: |
+            Automatically generated new version of vim theme.
+
+            PR generated from https://github.com/EpokTarren/themes/blob/master/.github/workflows/publish.yml
