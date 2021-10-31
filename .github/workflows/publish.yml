@@ -33,7 +33,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           cd "themes.vim"
-          git rm *.vim
+          git rm *.vim || true
           mv ../themes/vim/* ./
 
       - name: VIM PR
