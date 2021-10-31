@@ -29,6 +29,10 @@ let g:theme_style = '"Girl"'
 colorscheme tarren
 ```
 
+### VSCode
+
+You can either install it using the vsix file provided in the releases or download it from the [marketplace](https://marketplace.visualstudio.com/items?itemName=Tarren.tarrens-themes).
+
 ### Highlight.js
 
 If you want to import the files in your project and bundle them with the rest of your css.
@@ -66,6 +70,16 @@ If you want to just include a stylesheet, replace \[theme] with your desired var
 ### Spicetify
 
 Extract the zipped folder from relases into your themes directory.
+
+Also set Current theme to "Tarren" and color scheme to one of the available colorschemes
+
+```ini
+[Settings]
+; ...Your other settings
+current_theme = Tarren
+color_scheme  = bloody
+; ... Rest of the file
+```
 
 ## License
 
