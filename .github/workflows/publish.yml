@@ -16,11 +16,14 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
+      - name: Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn build
 
       - name: Checkout vim Repo
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
           repository: 'EpokTarren/themes.vim'
           path: 'themes.vim'
