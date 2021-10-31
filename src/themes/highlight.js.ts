@@ -51,6 +51,6 @@ const mappings: Mappings = {
 	background0: [],
 };
 
-for (const key in mappings) mappings[key as ColourName] = mappings[key as ColourName]!.map((c) => `.hljs-${c}`);
+for (const key in mappings) mappings[key as ColourName] = mappings[key as ColourName]?.map((c) => `.hljs-${c}`);
 
 export = cssTheme('hljs', baseCSS, mappings);

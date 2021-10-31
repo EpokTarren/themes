@@ -4,10 +4,14 @@
 	"displayName": "Tarren's Theme Collection",
 	"description": "A personal colourscheme collection.",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "build/index.js",
 	"author": "Tarren <me@tarren.moe>",
 	"publisher": "Tarren",
 	"license": "MIT",
+	"scripts": {
+		"build": "tsc && node .",
+		"lint": "prettier --check src && eslint ./src"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/EpokTarren/themes.git"

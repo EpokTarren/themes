@@ -12,16 +12,17 @@ const mappings: Mappings = {
 	background2: ['card', 'tab-active', 'button-disabled'],
 };
 
-for (const key in mappings) mappings[key as ColourName] = mappings[key as ColourName]!.map((v) => v.padEnd(18, ' '));
+for (const key in mappings) mappings[key as ColourName] = mappings[key as ColourName]?.map((v) => v.padEnd(18, ' '));
 
 function theme([name, palette]: [string, Palette]) {
 	let colors = `\n[${normalize(name, false)}]\n`;
 
 	for (const key in mappings)
-		colors += mappings[key as ColourName]!.reduce(
-			(acc, v) => `${acc}${v} = ${palette[key as ColourName].hex.replace('#', '')}\n`,
-			''
-		);
+		colors +=
+			mappings[key as ColourName]?.reduce(
+				(acc, v) => `${acc}${v} = ${palette[key as ColourName].hex.replace('#', '')}\n`,
+				''
+			) ?? '';
 
 	return colors;
 }

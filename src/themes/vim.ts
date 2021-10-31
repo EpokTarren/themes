@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error This package does not have typings, takes three numbers(0-255) and returns an x11 color code
 import x256 from 'x256';
 import { Builder } from '../build';
 import { shortName } from '../filenames';

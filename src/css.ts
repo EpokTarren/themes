@@ -1,7 +1,7 @@
 'use-strict';
 
 import { Builder } from './build';
-import { ColourName, Mappings, Palette } from './colour';
+import { ColourName, Mappings } from './colour';
 import { normalize, shortName } from './filenames';
 
 function minify(css: string): string {
@@ -53,7 +53,8 @@ export function cssTheme(
 				hslStrings[colour] = hsl;
 
 				if (mappings[colour as ColourName]?.length)
-					css += mappings[colour as ColourName]!.reduce((acc, v) => `${acc}, \n${v}`) + ` {\n\tcolor: ${hsl};\n}\n\n`;
+					css +=
+						mappings[colour as ColourName]?.reduce((acc, v) => `${acc}, \n${v}`) + ` {\n\tcolor: ${hsl};\n}\n\n` ?? '';
 			}
 
 			css = licenseHeader + baseCSS(hslStrings as Record<ColourName, string>) + css;
@@ -75,10 +76,10 @@ export function cssTheme(
 					: (colour.startsWith('background') ? 'background' : 'primary') + (parseInt(colour.replace(/\D/g, '')) || 0)
 			) as 'primary0';
 
-			let s = colour.startsWith('background')
+			const s = colour.startsWith('background')
 				? 'var(--bgSat)'
 				: Math.floor(someColors[index].hsl[1] * 100).toString() + '%';
-			let l = someColors[index].hsl[2].toString();
+			const l = someColors[index].hsl[2].toString();
 
 			hueStrings[colour] = `hsl(var(--${shortName(colour).replace(/\d/, '')}), ${s}, ${l})`;
 		}
@@ -88,7 +89,7 @@ export function cssTheme(
 		for (const colour in mappings)
 			if (mappings[colour as ColourName]?.length)
 				all +=
-					mappings[colour as ColourName]!.reduce((acc, v) => `${acc}, \n${v}`) +
+					(mappings[colour as ColourName]?.reduce((acc, v) => `${acc}, \n${v}`) ?? '') +
 					` {\n\tcolor: ${hueStrings[colour]};\n}\n\n`;
 
 		files.push({ path: `dist/all.css`, content: all.trim() });
