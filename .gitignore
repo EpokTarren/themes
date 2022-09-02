@@ -1,5 +1,6 @@
 build/
 node_modules/
+themes/alacritty/
 themes/spicetify/color.ini
 themes/highlight.js/
 themes/pygments/
