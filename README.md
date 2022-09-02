@@ -3,7 +3,7 @@
 A collection of personal themes for various software, inspired mainly by manga/anime.
 
 ![preview](assets/preview.png)
-_Themes are: 'Slime', 'Bloody', 'Rider', '"Girl"', and 'Good Job'._
+_Themes are: 'Slime', 'Bloody', 'Rider', '"Girl"', 'Good Job', and 'Arch Wizard'._
 
 ## Installation
 
