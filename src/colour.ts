@@ -64,3 +64,34 @@ export function hex(colour: ColourHSL) {
 	const [r, g, b] = HSLtoRGB(colour);
 	return `#${hexDigit(r)}${hexDigit(g)}${hexDigit(b)}`;
 }
+
+function colours<T>(f: (colour: [number, number, number]) => T, l: number) {
+	return {
+		red: f([0, 1, l]),
+		yellow: f([45, 1, l]),
+		green: f([120, 1, l]),
+		cyan: f([170, 1, l]),
+		blue: f([220, 1, l]),
+		magenta: f([290, 1, l]),
+	};
+}
+
+export const termColours = <T>(f: (colour: [number, number, number]) => T) => ({
+	normal: {
+		black: f([0, 0, 0.1]),
+		white: f([0, 0, 0.85]),
+		...colours(f, 0.7),
+	},
+
+	bright: {
+		black: f([0, 0, 0.2]),
+		white: f([0, 0, 0.95]),
+		...colours(f, 0.8),
+	},
+
+	dim: {
+		black: f([0, 0, 0.1]),
+		white: f([0, 0, 0.85]),
+		...colours(f, 0.6),
+	},
+});
