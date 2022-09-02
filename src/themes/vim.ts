@@ -164,9 +164,8 @@ const colourVariables = ([name, palette]: [string, Palette]) => `if g:theme_styl
 const generateColourVariables = (palettes: [string, Palette][]) => `" Default colours, Rider theme
 
 ${palettes
-	.filter(([name]) => name !== 'Rider')
-	.map(colourVariables)
-	.reduce((acc) => acc)
+	.filter(([name]) => name === 'Rider')
+	.map(colourVariables)[0]
 	.replace(/if.*| {2}/g, '')
 	.trim()}
 
