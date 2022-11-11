@@ -81,11 +81,11 @@ const generate: Builder = (palettes, { author, displayName, version, repository,
 							background: palette.background2.hex,
 							foreground: palette.primary0.hex,
 						},
+					},
 
-						bar: {
-							background: palette.background0.hex,
-							foreground: palette.hint.hex,
-						},
+					footer_bar: {
+						background: palette.background0.hex,
+						foreground: palette.hint.hex,
 					},
 
 					hints: {
