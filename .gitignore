@@ -10,3 +10,4 @@ themes/*.tgz
 themes/*.zip
 themes/*.vsix
 themes/**/*.lua
+themes/rofi/*.rasi
