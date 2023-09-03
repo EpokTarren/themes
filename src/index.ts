@@ -7,11 +7,12 @@ const pkg: PKG = require('../package.json');
 const srcFolder = resolve(__dirname, 'themes');
 const buildFolder = resolve(__dirname, '../themes');
 const licenseHeader = `${pkg.displayName} v${pkg.version}
-Copyright (c) 2021 ${pkg.author}
-Repository: https://github.com/EpokTarren/themes
+Copyright (c) 2021-2023 ${pkg.author}
+Repository: ${pkg.repository}
 License: ${pkg.license}`;
 
-for (const theme of readdirSync(srcFolder)) {
+const themes = process.argv.slice(2);
+for (const theme of themes.length > 0 ? themes : readdirSync(srcFolder)) {
 	const themeName = theme.replace(/.js$/, '');
 
 	console.log('Building', themeName);
