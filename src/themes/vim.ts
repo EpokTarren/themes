@@ -2,7 +2,7 @@
 import x256 from 'x256';
 import { Builder } from '../build';
 import { shortName } from '../filenames';
-import { ColourName, ColourHSL, ColourRGB, hex, Palette } from '../colour';
+import { ColourName, ColourHSL, ColourRGB, hex, Palette, HSLtoRGB } from '../colour';
 
 type Style =
 	| 'bold'
@@ -66,9 +66,9 @@ const mappings: Mapping[] = [
 
 	{ name: 'Todo', fg: 'error', bg: 'none', style: 'bold' },
 	{ name: 'Underlined', fg: 'plain', bg: undefined, style: 'underline' },
-	{ name: 'Error', fg: 'error', bg: undefined, style: 'undercurl' },
-	{ name: 'ErrorMsg', fg: 'error', bg: undefined, style: 'undercurl' },
-	{ name: 'WarningMsg', fg: 'warn', bg: undefined, style: 'undercurl' },
+	{ name: 'Error', fg: 'error', bg: 'background2', style: 'undercurl' },
+	{ name: 'ErrorMsg', fg: 'error', bg: 'background2', style: 'undercurl' },
+	{ name: 'WarningMsg', fg: 'warn', bg: 'background2', style: 'undercurl' },
 	{ name: 'Ignore', fg: 'plain', bg: undefined, style: undefined },
 	{ name: 'SpecialKey', fg: 'hint', bg: undefined, style: undefined },
 
@@ -151,13 +151,13 @@ const colourVariables = ([name, palette]: [string, Palette]) => `if g:theme_styl
 ).reduce(
 	(acc, key) =>
 		acc +
-		`\n  let s:${shortName(key)} = ${colour8bit(palette[key as ColourName].hsl)}` +
+		`\n  let s:${shortName(key)} = ${colour8bit(palette[key as ColourName].rgb)}` +
 		`\n  let s:${shortName(key)}G = '${hex(palette[key as ColourName].hsl)}'`,
 	''
 )}
-  let s:c = ${colour8bit(halveLightness(palette.plain.hsl))}
+  let s:c = ${colour8bit(HSLtoRGB(halveLightness(palette.plain.hsl)))}
   let s:cG = '${hex(halveLightness(palette.plain.hsl))}'
-  let s:ln = ${colour8bit(halveLightness(palette.extra0.hsl))}
+  let s:ln = ${colour8bit(HSLtoRGB(halveLightness(palette.extra0.hsl)))}
   let s:lnG = '${hex(halveLightness(palette.extra0.hsl))}'
 `;
 
