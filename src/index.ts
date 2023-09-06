@@ -8,7 +8,7 @@ const srcFolder = resolve(__dirname, 'themes');
 const buildFolder = resolve(__dirname, '../themes');
 const licenseHeader = `${pkg.displayName} v${pkg.version}
 Copyright (c) 2021-2023 ${pkg.author}
-Repository: ${pkg.repository}
+Repository: ${pkg.repository.url}
 License: ${pkg.license}`;
 
 const themes = process.argv.slice(2);
