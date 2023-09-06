@@ -59,10 +59,10 @@ const palette = (
 };
 
 export const palettes = [
-	palette('Rider', { bg: 350, primary: 330, comp: 270, extra: 215, error: 350, warn: 55, hint: 180 }),
+	palette('Rider', { bg: 350, primary: 335, comp: 260, extra: 215, error: 350, warn: 55, hint: 180 }),
 	palette('Good Job', { bg: 200, primary: 32, comp: 200, extra: 350, error: 0, warn: 50, hint: 200 }),
 	palette('Slime', { primary: 195, comp: 50, extra: 280, error: 0, warn: 50, hint: 220 }, 0.36),
-	palette('"Girl"', { bg: 340, primary: 0, comp: 150, extra: 35, error: 0, warn: 35, hint: 200 }, 0.11),
+	palette('"Girl"', { bg: 340, primary: 5, comp: 150, extra: 35, error: 0, warn: 35, hint: 200, rotate: 5 }, 0.11),
 	palette('Bloody', { primary: 290, comp: 355, extra: 220, error: 355, warn: 55, hint: 220 }),
-	palette('Arch Wizard', { bg: 17, primary: 357, comp: 270, extra: 45, error: 357, warn: 45, hint: 260 }),
+	palette('Arch Wizard', { bg: 17, primary: 10, comp: 260, extra: 45, error: 357, warn: 45, hint: 260 }),
 ];
