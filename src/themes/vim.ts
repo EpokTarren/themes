@@ -73,7 +73,7 @@ const mappings: Mapping[] = [
 	{ name: 'SpecialKey', fg: 'hint', bg: undefined, style: undefined },
 
 	// Variable types
-	{ name: 'Constant', fg: 'plain', bg: undefined, style: undefined },
+	{ name: 'Constant', fg: 'extra0', bg: undefined, style: undefined },
 	{ name: 'String', fg: 'complementary1', bg: undefined, style: undefined },
 	{ name: 'StringDelimiter', fg: 'complementary1', bg: undefined, style: undefined },
 	{ name: 'Character', fg: 'complementary1', bg: undefined, style: undefined },
@@ -81,23 +81,23 @@ const mappings: Mapping[] = [
 	{ name: 'Boolean', fg: 'extra0', bg: undefined, style: undefined },
 	{ name: 'Float', fg: 'extra0', bg: undefined, style: undefined },
 
-	{ name: 'Identifier', fg: 'primary0', bg: undefined, style: undefined },
+	{ name: 'Identifier', fg: 'plain', bg: undefined, style: undefined },
 	{ name: 'Function', fg: 'primary0', bg: undefined, style: undefined },
 
 	// Language constructs
-	{ name: 'Statement', fg: 'extra2', bg: undefined, style: undefined },
+	{ name: 'Statement', fg: 'extra0', bg: undefined, style: undefined },
 	{ name: 'Conditional', fg: 'extra2', bg: undefined, style: undefined },
 	{ name: 'Repeat', fg: 'extra2', bg: undefined, style: undefined },
 	{ name: 'Label', fg: 'extra2', bg: undefined, style: undefined },
 	{ name: 'Operator', fg: 'primary0', bg: undefined, style: undefined },
-	{ name: 'Keyword', fg: 'extra2', bg: undefined, style: undefined },
+	{ name: 'Keyword', fg: 'extra0', bg: undefined, style: undefined },
 	{ name: 'Exception', fg: 'error', bg: undefined, style: undefined },
 	{ name: 'Comment', fg: 'comment', bg: undefined, style: 'italic' },
 
 	{ name: 'Special', fg: 'complementary1', bg: undefined, style: undefined },
 	{ name: 'SpecialChar', fg: 'complementary1', bg: undefined, style: undefined },
 	{ name: 'Tag', fg: 'extra2', bg: undefined, style: undefined },
-	{ name: 'Delimiter', fg: 'hint', bg: undefined, style: undefined },
+	{ name: 'Delimiter', fg: 'complementary0', bg: undefined, style: undefined },
 	{ name: 'SpecialComment', fg: 'primary1', bg: undefined, style: undefined },
 	{ name: 'Debug', fg: 'comment', bg: undefined, style: undefined },
 
@@ -108,10 +108,10 @@ const mappings: Mapping[] = [
 	{ name: 'Macro', fg: 'extra2', bg: undefined, style: undefined },
 	{ name: 'PreCondit', fg: 'extra2', bg: undefined, style: undefined },
 
-	{ name: 'Type', fg: 'primary1', bg: undefined, style: undefined },
-	{ name: 'StorageClass', fg: 'primary1', bg: undefined, style: undefined },
-	{ name: 'Structure', fg: 'primary1', bg: undefined, style: undefined },
-	{ name: 'Typedef', fg: 'primary1', bg: undefined, style: undefined },
+	{ name: 'Type', fg: 'extra1', bg: undefined, style: undefined },
+	{ name: 'StorageClass', fg: 'extra1', bg: undefined, style: undefined },
+	{ name: 'Structure', fg: 'extra1', bg: undefined, style: undefined },
+	{ name: 'Typedef', fg: 'extra1', bg: undefined, style: undefined },
 
 	// Diff
 	{ name: 'DiffAdd', fg: 'hint', bg: undefined, style: undefined },
