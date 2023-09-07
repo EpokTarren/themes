@@ -9,8 +9,8 @@ pre, code {
 	display: block;
 	overflow-x: auto;
 	padding: 0.5em;
-	background-color: hsl(7, 18%, 13%);
-	color: hsl(40, 60%, 95%);
+	background-color: hsl(35, 6%, 13%);
+	color: hsl(370, 60%, 95%);
 }
 
 td.linenos .normal, span.linenos {
@@ -21,7 +21,7 @@ td.linenos .normal, span.linenos {
 }
 
 td.linenos .special, span.linenos.special {
-	background-color: hsl(7, 18%, 13%);
+	background-color: hsl(35, 6%, 13%);
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -52,7 +52,7 @@ td.linenos, span.linenos.special,
 .c, .ch, .cm, .c1, .cs, 
 .g, 
 .go, .gp {
-	color: hsl(40, 60%, 95%);
+	color: hsl(370, 60%, 95%);
 }
 
 .n, .py, .nx, 
@@ -67,7 +67,7 @@ td.linenos, span.linenos.special,
 .gh, .gu, 
 .sx, 
 .nt {
-	color: hsl(0, 100%, 60%);
+	color: hsl(330, 100%, 60%);
 }
 
 .na, 
@@ -75,12 +75,12 @@ td.linenos, span.linenos.special,
 .o, .ow, 
 .se, .si, .ss, 
 .p {
-	color: hsl(30, 100%, 90%);
+	color: hsl(0, 100%, 90%);
 }
 
 .s, .sb, .sc, .sd, .s2, .sh, .s1, 
 .cp, .cpf {
-	color: hsl(270, 100%, 80%);
+	color: hsl(200, 100%, 80%);
 }
 
 .no, 
@@ -108,9 +108,9 @@ td.linenos, span.linenos.special,
 }
 
 .gd {
-	color: hsl(357, 100%, 60%);
+	color: hsl(0, 100%, 60%);
 }
 
 .gi {
-	color: hsl(260, 100%, 60%);
+	color: hsl(220, 100%, 60%);
 }

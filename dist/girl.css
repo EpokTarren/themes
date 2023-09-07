@@ -1,7 +1,7 @@
 /*!
- * Tarren's Theme Collection v1.1.0
- * Copyright (c) 2021 Tarren <me@tarren.moe>
- * Repository: https://github.com/EpokTarren/themes
+ * Tarren's Theme Collection v1.2.0
+ * Copyright (c) 2021-2023 Tarren <me@tarren.moe>
+ * Repository: https://github.com/EpokTarren/themes.git
  * License: MIT
  */
 pre, code {
@@ -9,8 +9,8 @@ pre, code {
 	display: block;
 	overflow-x: auto;
 	padding: 0.5em;
-	background-color: hsl(340, 11%, 13%);
-	color: hsl(0, 60%, 95%);
+	background-color: hsl(335, 11%, 13%);
+	color: hsl(20, 60%, 95%);
 }
 
 td.linenos .normal, span.linenos {
@@ -21,7 +21,7 @@ td.linenos .normal, span.linenos {
 }
 
 td.linenos .special, span.linenos.special {
-	background-color: hsl(340, 11%, 13%);
+	background-color: hsl(335, 11%, 13%);
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -52,7 +52,7 @@ td.linenos, span.linenos.special,
 .c, .ch, .cm, .c1, .cs, 
 .g, 
 .go, .gp {
-	color: hsl(0, 60%, 95%);
+	color: hsl(20, 60%, 95%);
 }
 
 .n, .py, .nx, 
@@ -75,12 +75,12 @@ td.linenos, span.linenos.special,
 .o, .ow, 
 .se, .si, .ss, 
 .p {
-	color: hsl(0, 100%, 90%);
+	color: hsl(15, 100%, 90%);
 }
 
 .s, .sb, .sc, .sd, .s2, .sh, .s1, 
 .cp, .cpf {
-	color: hsl(150, 100%, 80%);
+	color: hsl(155, 100%, 80%);
 }
 
 .no, 
@@ -90,7 +90,7 @@ td.linenos, span.linenos.special,
 .nn, .kn, 
 .l, 
 .m, .mb, .mf, .mh, .mi, .mo, .il {
-	color: hsl(35, 100%, 60%);
+	color: hsl(30, 100%, 60%);
 }
 
 .nn, .kn, 
@@ -104,7 +104,7 @@ td.linenos, span.linenos.special,
 .bp, 
 .sa, 
 .sr {
-	color: hsl(35, 100%, 80%);
+	color: hsl(40, 100%, 80%);
 }
 
 .gd {

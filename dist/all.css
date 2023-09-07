@@ -1,91 +1,119 @@
 /*!
- * Tarren's Theme Collection v1.1.0
- * Copyright (c) 2021 Tarren <me@tarren.moe>
- * Repository: https://github.com/EpokTarren/themes
+ * Tarren's Theme Collection v1.2.0
+ * Copyright (c) 2021-2023 Tarren <me@tarren.moe>
+ * Repository: https://github.com/EpokTarren/themes.git
  * License: MIT
  */
 .rider {
 	--bgSat: 0.18;
-	--txt: 330;
-	--fg: 330;
-	--fg: 330;
+	--txt: 365;
+	--fg: 325;
+	--fg: 355;
 	--co: 270;
+	--ex: 205;
 	--ex: 215;
-	--ex: 215;
-	--ex: 215;
+	--ex: 225;
 	--err: 350;
-	--hint: 215;
-	--bg: 350;
+	--hint: 180;
+	--bg: 340;
 }
 
 .good-job {
-	--bgSat: 0.11;
-	--txt: 32;
-	--fg: 32;
-	--fg: 32;
-	--co: 200;
+	--bgSat: 0.18;
+	--txt: 62;
+	--fg: 22;
+	--fg: 52;
+	--co: 210;
+	--ex: 340;
 	--ex: 350;
-	--ex: 350;
-	--ex: 350;
-	--err: 350;
+	--ex: 0;
+	--err: 0;
 	--hint: 200;
-	--bg: 200;
+	--bg: 190;
 }
 
 .slime {
 	--bgSat: 0.36;
-	--txt: 195;
-	--fg: 195;
-	--fg: 195;
-	--co: 50;
+	--txt: 225;
+	--fg: 185;
+	--fg: 215;
+	--co: 60;
+	--ex: 270;
 	--ex: 280;
-	--ex: 280;
-	--ex: 280;
+	--ex: 290;
 	--err: 0;
-	--hint: 195;
-	--bg: 195;
+	--hint: 220;
+	--bg: 185;
 }
 
 .girl {
 	--bgSat: 0.11;
-	--txt: 0;
+	--txt: 20;
 	--fg: 0;
-	--fg: 0;
-	--co: 150;
+	--fg: 15;
+	--co: 155;
+	--ex: 30;
 	--ex: 35;
-	--ex: 35;
-	--ex: 35;
+	--ex: 40;
 	--err: 0;
 	--hint: 200;
-	--bg: 340;
+	--bg: 335;
 }
 
 .bloody {
 	--bgSat: 0.18;
-	--txt: 290;
-	--fg: 290;
-	--fg: 290;
-	--co: 355;
+	--txt: 320;
+	--fg: 280;
+	--fg: 310;
+	--co: 5;
+	--ex: 210;
 	--ex: 220;
-	--ex: 220;
-	--ex: 220;
+	--ex: 230;
 	--err: 355;
 	--hint: 220;
-	--bg: 290;
+	--bg: 280;
 }
 
 .arch-wizard {
 	--bgSat: 0.18;
-	--txt: 357;
-	--fg: 357;
-	--fg: 357;
-	--co: 290;
+	--txt: 40;
+	--fg: 0;
+	--fg: 30;
+	--co: 270;
+	--ex: 35;
 	--ex: 45;
-	--ex: 45;
-	--ex: 45;
+	--ex: 55;
 	--err: 357;
 	--hint: 260;
-	--bg: 17;
+	--bg: 7;
+}
+
+.imouto {
+	--bgSat: 0.06;
+	--txt: 370;
+	--fg: 330;
+	--fg: 0;
+	--co: 200;
+	--ex: 35;
+	--ex: 45;
+	--ex: 55;
+	--err: 0;
+	--hint: 220;
+	--bg: 35;
+}
+
+.gyaru {
+	--bgSat: 0.12;
+	--txt: 40;
+	--fg: 0;
+	--fg: 30;
+	--co: 70;
+	--ex: 197;
+	--ex: 207;
+	--ex: 217;
+	--err: 355;
+	--hint: 240;
+	--bg: 217;
 }
 
 pre, code {
