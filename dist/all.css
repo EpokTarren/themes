@@ -1,85 +1,111 @@
 /*!
- * Tarren's Theme Collection v1.1.0
- * Copyright (c) 2021 Tarren <me@tarren.moe>
- * Repository: https://github.com/EpokTarren/themes
+ * Tarren's Theme Collection v1.2.0
+ * Copyright (c) 2021-2023 Tarren <me@tarren.moe>
+ * Repository: https://github.com/EpokTarren/themes.git
  * License: MIT
  */
 .rider {
 	--bgSat: 0.18;
-	--txt: 330;
-	--fg: 330;
-	--fg: 330;
-	--fg: 330;
+	--txt: 365;
+	--fg: 325;
+	--fg: 335;
+	--fg: 355;
+	--co: 260;
 	--co: 270;
-	--co: 270;
-	--ex: 215;
-	--ex: 215;
-	--bg: 350;
+	--ex: 205;
+	--ex: 225;
+	--bg: 340;
 }
 
 .good-job {
-	--bgSat: 0.11;
-	--txt: 32;
+	--bgSat: 0.18;
+	--txt: 62;
+	--fg: 22;
 	--fg: 32;
-	--fg: 32;
-	--fg: 32;
+	--fg: 52;
 	--co: 200;
-	--co: 200;
-	--ex: 350;
-	--ex: 350;
-	--bg: 200;
+	--co: 210;
+	--ex: 340;
+	--ex: 0;
+	--bg: 190;
 }
 
 .slime {
 	--bgSat: 0.36;
-	--txt: 195;
+	--txt: 225;
+	--fg: 185;
 	--fg: 195;
-	--fg: 195;
-	--fg: 195;
+	--fg: 215;
 	--co: 50;
-	--co: 50;
-	--ex: 280;
-	--ex: 280;
-	--bg: 195;
+	--co: 60;
+	--ex: 270;
+	--ex: 290;
+	--bg: 185;
 }
 
 .girl {
 	--bgSat: 0.11;
-	--txt: 0;
+	--txt: 20;
 	--fg: 0;
-	--fg: 0;
-	--fg: 0;
+	--fg: 5;
+	--fg: 15;
 	--co: 150;
-	--co: 150;
-	--ex: 35;
-	--ex: 35;
-	--bg: 340;
+	--co: 155;
+	--ex: 30;
+	--ex: 40;
+	--bg: 335;
 }
 
 .bloody {
 	--bgSat: 0.18;
-	--txt: 290;
+	--txt: 320;
+	--fg: 280;
 	--fg: 290;
-	--fg: 290;
-	--fg: 290;
+	--fg: 310;
 	--co: 355;
-	--co: 355;
-	--ex: 220;
-	--ex: 220;
-	--bg: 290;
+	--co: 5;
+	--ex: 210;
+	--ex: 230;
+	--bg: 280;
 }
 
 .arch-wizard {
 	--bgSat: 0.18;
-	--txt: 357;
-	--fg: 357;
-	--fg: 357;
-	--fg: 357;
-	--co: 290;
-	--co: 290;
-	--ex: 45;
-	--ex: 45;
-	--bg: 17;
+	--txt: 40;
+	--fg: 0;
+	--fg: 10;
+	--fg: 30;
+	--co: 260;
+	--co: 270;
+	--ex: 35;
+	--ex: 55;
+	--bg: 7;
+}
+
+.imouto {
+	--bgSat: 0.06;
+	--txt: 370;
+	--fg: 330;
+	--fg: 340;
+	--fg: 0;
+	--co: 190;
+	--co: 200;
+	--ex: 35;
+	--ex: 55;
+	--bg: 35;
+}
+
+.gyaru {
+	--bgSat: 0.12;
+	--txt: 40;
+	--fg: 0;
+	--fg: 10;
+	--fg: 30;
+	--co: 60;
+	--co: 70;
+	--ex: 197;
+	--ex: 217;
+	--bg: 217;
 }
 
 .hljs {

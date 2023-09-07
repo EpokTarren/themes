@@ -1,15 +1,15 @@
 /*!
- * Tarren's Theme Collection v1.1.0
- * Copyright (c) 2021 Tarren <me@tarren.moe>
- * Repository: https://github.com/EpokTarren/themes
+ * Tarren's Theme Collection v1.2.0
+ * Copyright (c) 2021-2023 Tarren <me@tarren.moe>
+ * Repository: https://github.com/EpokTarren/themes.git
  * License: MIT
  */
 .hljs {
 	display: block;
 	overflow-x: auto;
 	padding: 0.5em;
-	background-color: hsl(290, 18%, 13%);
-	color: hsl(290, 60%, 95%);
+	background-color: hsl(280, 18%, 13%);
+	color: hsl(320, 60%, 95%);
 }
 
 .hljs-comment {
@@ -29,7 +29,7 @@
 .hljs-params, 
 .hljs-code, 
 .hljs-comment {
-	color: hsl(290, 60%, 95%);
+	color: hsl(320, 60%, 95%);
 }
 
 .hljs-class, 
@@ -44,7 +44,7 @@
 .hljs-selector-pseudo, 
 .hljs-section, 
 .hljs-deletion {
-	color: hsl(290, 100%, 60%);
+	color: hsl(280, 100%, 60%);
 }
 
 .hljs-formula, 
@@ -60,7 +60,7 @@
 .hljs-attr, 
 .hljs-attribute, 
 .hljs-quote {
-	color: hsl(290, 100%, 90%);
+	color: hsl(310, 100%, 90%);
 }
 
 .hljs-template-tag, 
@@ -74,7 +74,7 @@
 .hljs-subst, 
 .hljs-tag, 
 .hljs-bullet {
-	color: hsl(355, 100%, 80%);
+	color: hsl(5, 100%, 80%);
 }
 
 .hljs-built_in, 
@@ -83,11 +83,11 @@
 .hljs-number, 
 .hljs-symbol, 
 .hljs-meta-keyword {
-	color: hsl(220, 100%, 60%);
+	color: hsl(210, 100%, 60%);
 }
 
 .hljs-keyword, 
 .hljs-regexp, 
 .hljs-meta-string {
-	color: hsl(220, 100%, 80%);
+	color: hsl(230, 100%, 80%);
 }
