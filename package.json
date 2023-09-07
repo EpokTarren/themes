@@ -3,7 +3,7 @@
 	"name": "tarrens-themes",
 	"displayName": "Tarren's Theme Collection",
 	"description": "A personal colourscheme collection.",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"main": "build/index.js",
 	"author": "Tarren <me@tarren.moe>",
 	"publisher": "Tarren",
