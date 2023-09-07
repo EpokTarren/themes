@@ -65,4 +65,6 @@ export const palettes = [
 	palette('"Girl"', { bg: 340, primary: 5, comp: 150, extra: 35, error: 0, warn: 35, hint: 200, rotate: 5 }, 0.11),
 	palette('Bloody', { primary: 290, comp: 355, extra: 220, error: 355, warn: 55, hint: 220 }),
 	palette('Arch Wizard', { bg: 17, primary: 10, comp: 260, extra: 45, error: 357, warn: 45, hint: 260 }),
+	palette('Imouto?', { bg: 45, primary: 340, comp: 190, extra: 45, error: 0, warn: 35, hint: 220 }, 0.06),
+	palette('Gyaru', { bg: 227, primary: 10, comp: 60, extra: 207, error: 355, warn: 35, hint: 240 }, 0.12),
 ];
