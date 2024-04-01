@@ -2,29 +2,34 @@ import { Builder } from '../build';
 import { normalize } from '../filenames';
 import { hex, termColours } from '../colour';
 
-type Member = string | number | boolean | YML | Member[] | null;
-interface YML {
+type Member = string | number | boolean | TOML | Member[] | null;
+interface TOML {
 	[key: string]: Member;
 }
 
-const stringify = (obj?: Member, level = 0): string => {
+const stringify_toml = (obj?: Member, me?: string): string => {
 	if (obj === undefined || obj === null) return 'None';
 
 	switch (typeof obj) {
 		case 'string':
-			return `'${obj.replace("'", "\\'")}'`;
+			return `"${obj.replace('"', '\\"')}"`;
 		case 'number':
 			return String(obj);
 		case 'boolean':
 			return obj ? 'true' : 'false';
 		case 'object': {
-			if (Array.isArray(obj))
-				return obj.map(stringify).reduce((acc, v) => `${acc}\n${' '.repeat(level * 2)}- ${v}`, '');
+			if (Array.isArray(obj)) throw new Error('Arrays are currently unsupported');
 
-			let res = '\n';
+			let res = me ? `\n[${me}]\n` : '\n';
+			const defer = [];
 
 			for (const key in obj) {
-				res += `${' '.repeat(level * 2)}${key}: ${stringify(obj[key], level + 1)}\n`;
+				if (typeof obj[key] == 'object') defer.push(key);
+				else res += `${key} = ${stringify_toml(obj[key])}\n`;
+			}
+
+			for (const key of defer) {
+				res += stringify_toml(obj[key], me ? `${me}.${key}` : key);
 			}
 
 			return res;
@@ -40,14 +45,13 @@ const generate: Builder = (palettes, { author, displayName, version, repository,
 # Version: ${version}
 # Repository: ${repository.url}
 # License: ${license}
-# Colour Scheme: ${name}
-`;
+# Colour Scheme: ${name}`;
 
 	return palettes.map(([name, palette]) => ({
-		path: normalize(name) + '.yml',
+		path: normalize(name) + '.toml',
 		content:
 			head(name) +
-			stringify({
+			stringify_toml({
 				colors: {
 					primary: {
 						background: palette.background0.hex,
@@ -59,11 +63,6 @@ const generate: Builder = (palettes, { author, displayName, version, repository,
 					cursor: {
 						text: palette.background0.hex,
 						cursor: palette.primary2.hex,
-					},
-
-					line_indicator: {
-						text: palette.background0.hex,
-						cursor: palette.extra2.hex,
 					},
 
 					vi_mode_cursor: {
@@ -89,7 +88,7 @@ const generate: Builder = (palettes, { author, displayName, version, repository,
 					},
 
 					hints: {
-						first: {
+						start: {
 							background: palette.hint.hex,
 							foreground: palette.background0.hex,
 						},
