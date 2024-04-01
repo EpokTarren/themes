@@ -10,6 +10,7 @@ const shortNames = {
 	error: 'err',
 	comment: 'c',
 	line: 'ln',
+	lineBg: 'lnBg',
 };
 
 export const shortName = (identifer: string): string =>

@@ -20,7 +20,7 @@ interface Mapping {
 	name: string;
 	style?: Style;
 	fg?: ColourName | 'line' | 'comment' | 'none';
-	bg?: ColourName | 'line' | 'comment' | 'none';
+	bg?: ColourName | 'lineBg' | 'comment' | 'none';
 }
 
 const mappings: Mapping[] = [
@@ -28,7 +28,7 @@ const mappings: Mapping[] = [
 	{ name: 'Normal', fg: 'plain', bg: 'background0', style: undefined },
 	{ name: 'Cursor', fg: 'plain', bg: undefined, style: undefined },
 	{ name: 'CursorLine', fg: 'plain', bg: 'background2', style: undefined },
-	{ name: 'LineNr', fg: 'line', bg: 'background0', style: undefined },
+	{ name: 'LineNr', fg: 'line', bg: 'lineBg', style: undefined },
 	{ name: 'CursorLineNR', fg: 'plain', bg: 'background2', style: undefined },
 
 	// Number column
@@ -146,6 +146,10 @@ function halveLightness([h, s, l]: ColourHSL): ColourHSL {
 	return [h, s / 2, l / 2];
 }
 
+function lineNr([h, s, l]: ColourHSL): ColourHSL {
+	return [h, s * (2 / 3), l * (2 / 3)];
+}
+
 const colourVariables = ([name, palette]: [string, Palette]) => `if g:theme_style == '${name}'${Object.keys(
 	palette
 ).reduce(
@@ -157,8 +161,10 @@ const colourVariables = ([name, palette]: [string, Palette]) => `if g:theme_styl
 )}
   let s:c = ${colour8bit(HSLtoRGB(halveLightness(palette.plain.hsl)))}
   let s:cG = '${hex(halveLightness(palette.plain.hsl))}'
-  let s:ln = ${colour8bit(HSLtoRGB(halveLightness(palette.extra0.hsl)))}
-  let s:lnG = '${hex(halveLightness(palette.extra0.hsl))}'
+  let s:ln = ${colour8bit(HSLtoRGB(lineNr(palette.extra0.hsl)))}
+  let s:lnG = '${hex(lineNr(palette.extra0.hsl))}'
+  let s:lnBg = ${colour8bit(HSLtoRGB(lineNr(palette.background0.hsl)))}
+  let s:lnBgG = '${hex(lineNr(palette.background0.hsl))}'
 `;
 
 const generateColourVariables = (palettes: [string, Palette][]) => `" Default colours, Rider theme
