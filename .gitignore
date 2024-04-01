@@ -11,4 +11,5 @@ themes/*.zip
 themes/*.vsix
 themes/**/*.lua
 themes/rofi/*.rasi
+themes/hypr/*.conf
 **/LICENSE
