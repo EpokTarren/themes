@@ -7,8 +7,10 @@ themes/pygments/
 themes/vim/
 themes/vscode/**/*.json
 themes/*.tgz
+themes/*.tar.gz
 themes/*.zip
 themes/*.vsix
+themes/**/*.vsix
 themes/**/*.lua
 themes/rofi/*.rasi
 themes/hypr/*.conf
