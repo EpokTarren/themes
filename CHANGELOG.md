@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0] - 2024-08-11
+
+### Added
+
+- "Commander" theme
+- Hyprland config colour bindings
+- Support for gtk-css
+
+### Changed
+
+- Alacritty changed from old yaml to new toml format
+- Make line number colour more prominent in vim
+
 ## [1.2.0] - 2023-09-07
 
 ### Added
