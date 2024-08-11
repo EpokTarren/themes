@@ -1,5 +1,5 @@
 /*!
- * Tarren's Theme Collection v1.2.0
+ * Tarren's Theme Collection v1.3.0
  * Copyright (c) 2021-2023 Tarren <me@tarren.moe>
  * Repository: https://github.com/EpokTarren/themes.git
  * License: MIT
@@ -113,6 +113,20 @@
 	--ex: 217;
 	--err: 355;
 	--hint: 240;
+	--bg: 217;
+}
+
+.commander {
+	--bgSat: 0.12;
+	--txt: 257;
+	--fg: 217;
+	--fg: 247;
+	--co: 50;
+	--ex: 335;
+	--ex: 345;
+	--ex: 355;
+	--err: 355;
+	--hint: 227;
 	--bg: 217;
 }
 
