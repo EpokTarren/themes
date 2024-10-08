@@ -7,7 +7,7 @@ const pkg: PKG = require('../package.json');
 const srcFolder = resolve(__dirname, 'themes');
 const buildFolder = resolve(__dirname, '../themes');
 const licenseHeader = `${pkg.displayName} v${pkg.version}
-Copyright (c) 2021-2023 ${pkg.author}
+Copyright (c) 2021-2024 ${pkg.author}
 Repository: ${pkg.repository.url}
 License: ${pkg.license}`;
 
