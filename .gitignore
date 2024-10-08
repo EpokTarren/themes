@@ -15,4 +15,5 @@ themes/**/*.lua
 themes/rofi/*.rasi
 themes/hypr/*.conf
 themes/gtk-css/*.css
+themes/bash
 **/LICENSE
