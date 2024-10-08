@@ -95,3 +95,29 @@ export const termColours = <T>(f: (colour: [number, number, number]) => T) => ({
 		...colours(f, 0.6),
 	},
 });
+
+export function as_hex(palette: Palette) {
+	return {
+		bg0: palette.background0.hex,
+		bg1: palette.background1.hex,
+		bg2: palette.background2.hex,
+
+		plain: palette.plain.hex,
+
+		primary0: palette.primary0.hex,
+		primary1: palette.primary1.hex,
+		primary2: palette.primary2.hex,
+		primary3: palette.primary3.hex,
+
+		comp0: palette.complementary0.hex,
+		comp1: palette.complementary1.hex,
+
+		extra0: palette.extra0.hex,
+		extra1: palette.extra1.hex,
+		extra2: palette.extra2.hex,
+
+		error: palette.error.hex,
+		warn: palette.warn.hex,
+		hint: palette.hint.hex,
+	};
+}
