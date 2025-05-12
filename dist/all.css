@@ -1,6 +1,6 @@
 /*!
- * Tarren's Theme Collection v1.3.0
- * Copyright (c) 2021-2023 Tarren <me@tarren.moe>
+ * Tarren's Theme Collection v1.4.0
+ * Copyright (c) 2021-2025 Tarren <me@tarren.moe>
  * Repository: https://github.com/EpokTarren/themes.git
  * License: MIT
  */
@@ -119,6 +119,19 @@
 	--ex: 335;
 	--ex: 355;
 	--bg: 217;
+}
+
+.encore {
+	--bgSat: 0.2;
+	--txt: 375;
+	--fg: 335;
+	--fg: 345;
+	--fg: 5;
+	--co: 40;
+	--co: 50;
+	--ex: 250;
+	--ex: 270;
+	--bg: 302;
 }
 
 .hljs {
