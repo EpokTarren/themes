@@ -68,4 +68,5 @@ export const palettes = [
 	palette('Imouto?', { bg: 45, primary: 340, comp: 190, extra: 45, error: 0, warn: 35, hint: 220 }, 0.06),
 	palette('Gyaru', { bg: 227, primary: 10, comp: 60, extra: 207, error: 355, warn: 35, hint: 240 }, 0.12),
 	palette('Commander', { primary: 227, comp: 40, extra: 345, error: 355, warn: 35, hint: 227 }, 0.12),
+	palette('Encore', { bg: 312, primary: 345, comp: 40, extra: 260, error: 355, warn: 45, hint: 255 }, 0.2),
 ];
