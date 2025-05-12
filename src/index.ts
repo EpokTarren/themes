@@ -1,7 +1,7 @@
 import { palettes } from './palettes';
 import { Builder, PKG } from './build';
 import { dirname, resolve } from 'path';
-import { existsSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
+import { copyFileSync, existsSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
 
 const pkg: PKG = require('../package.json');
 const srcFolder = resolve(__dirname, 'themes');
@@ -30,6 +30,8 @@ for (const theme of themes.length > 0 ? themes : readdirSync(srcFolder)) {
 
 		console.log(themeName, 'wrote to:', filepath);
 	}
+
+	copyFileSync('LICENSE', resolve(themeFolder, 'LICENSE'));
 
 	console.log('-'.repeat(10));
 }
