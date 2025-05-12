@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0] - 2025-05-12
+
+### Added
+
+- "Encore" theme
+- Ghostty support
+- Bash support
+
 ## [1.3.0] - 2024-08-11
 
 ### Added
