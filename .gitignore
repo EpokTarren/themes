@@ -17,4 +17,5 @@ themes/hypr/*.conf
 themes/gtk-css/*.css
 themes/bash
 themes/ghostty
+themes/helix
 **/LICENSE

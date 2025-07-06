@@ -121,3 +121,11 @@ export function as_hex(palette: Palette) {
 		hint: palette.hint.hex,
 	};
 }
+
+export function halveLightness([h, s, l]: ColourHSL): ColourHSL {
+	return [h, s / 2, l / 2];
+}
+
+export function lineNr([h, s, l]: ColourHSL): ColourHSL {
+	return [h, s * (2 / 3), l * (2 / 3)];
+}

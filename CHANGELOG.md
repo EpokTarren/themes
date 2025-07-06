@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Support for Helix
+
 ## [1.4.0] - 2025-05-12
 
 ### Added

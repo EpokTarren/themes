@@ -1,5 +1,5 @@
 export const normalize = (name: string, lowercase = true): string =>
-	(lowercase ? name.toLowerCase() : name).replace(/\s+/g, '-').replace(/[^\w-.@]/g, '');
+	(lowercase ? name.toLowerCase().replace(/\s+/g, '-') : name.replace(/\s+/g, '')).replace(/[^\w-.@]/g, '');
 
 const shortNames = {
 	background: 'bg',

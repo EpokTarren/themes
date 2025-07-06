@@ -2,7 +2,7 @@
 import x256 from 'x256';
 import { Builder } from '../build';
 import { shortName } from '../filenames';
-import { ColourName, ColourHSL, ColourRGB, hex, Palette, HSLtoRGB } from '../colour';
+import { ColourName, ColourRGB, hex, Palette, HSLtoRGB, halveLightness, lineNr } from '../colour';
 
 type Style =
 	| 'bold'
@@ -140,14 +140,6 @@ const mappingToString = (m: Mapping): string =>
 
 function colour8bit([r, g, b]: ColourRGB) {
 	return x256(r, g, b);
-}
-
-function halveLightness([h, s, l]: ColourHSL): ColourHSL {
-	return [h, s / 2, l / 2];
-}
-
-function lineNr([h, s, l]: ColourHSL): ColourHSL {
-	return [h, s * (2 / 3), l * (2 / 3)];
 }
 
 const colourVariables = ([name, palette]: [string, Palette]) => `if g:theme_style == '${name}'${Object.keys(
